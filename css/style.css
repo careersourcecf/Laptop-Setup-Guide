@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'ProximaBlack';
+    src: url('https://www.careersourcecentralflorida.com/wp-content/themes/auxilia/lib/fonts/ProximaNova/ProximaNova-Black.otf');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaExtraBold';
+    src: url('https://www.careersourcecentralflorida.com/wp-content/themes/auxilia/lib/fonts/ProximaNova/ProximaNova-Extrabold.otf');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaBold';
+    src: url('https://www.careersourcecentralflorida.com/wp-content/themes/auxilia/lib/fonts/ProximaNova/ProximaNova-Bold.otf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaRegular';
+    src: url('https://www.careersourcecentralflorida.com/wp-content/themes/auxilia/lib/fonts/ProximaNova/ProximaNova-Regular.otf');
+    font-weight: 800;
+    font-style: normal;
+}
+:root {
+    --blue: #1b89c8;
+}
+* {
+    font-family: 'ProximaRegular';
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+    font-family: 'ProximaExtraBold';
+}
+html {
+    height: 100%;
+    background-color: var(--blue);
+}
+body {
+    background: url('https://www.careersourcecentralflorida.com/wp-content/uploads/cscf_background_geometric_triangles_blue-1.jpg') no-repeat center center fixed;
+    background-size: cover!important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin:0;
+    padding: 0;
+    height: auto;
+    flex-shrink: 0;
+}
+.container {
+    background: white;
+    padding: 5vw;
+    box-sizing: border-box;
+    margin-bottom: 5vh;
+    width: 100%;
+    max-width: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo {
+    width: 250px;
+    max-width: 100%;
+    pointer-events: none;
+    -webkit-user-select: none;
+}
+.video {
+    width: 100%;
+    border-radius: 3vw;
+}
+
+.source-cta {
+    margin-top: 5vh;
+    background: var(--blue);
+    color: white;
+    border-radius: 1vw;
+    padding: 2vh;
+    display: flex;
+}
+.small-col {
+    width: 50%;
+}
+.large-col {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    text-align:center;
+    justify-content: center;
+}
+.button {
+    text-decoration: none;
+    color: var(--blue);
+    background: white;
+    font-family: 'ProximaBold';
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 3px;
+}
+footer {
+    margin-top: 10vh;
+    width: 100%;
+}
+footer p:hover {
+    opacity: 1;
+}
+footer p {
+    opacity: 0.4;
+}
+.footer-logos {
+    text-align:center;
+    pointer-events: none;
+    -webkit-user-select: none;
+}
+.footer-logo {
+    width: 100px;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 850px) {
+    .container {
+        margin-bottom: 0;
+    }
+    .source-cta {
+        flex-direction: column;
+    }
+    .small-col {
+        width: 100%;
+    }
+    .large-col {
+        width: 100%;
+    }
+}
